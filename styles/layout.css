@@ -1,0 +1,181 @@
+/* layout.css – Page layout and design
+   Author: Your Name
+   Date: 2025-09-09
+*/
+
+/* ==== Header ==== */
+header nouse {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #333;
+}
+
+header {
+  text-align: center;
+  border: 4px solid darkgray;
+  border-bottom: 4px solid darkgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color:lightgray
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: purple;
+}
+
+/* ==== Navigation Menu ==== */
+nav {
+  text-align: left;
+  margin: 10px 0 20px 0;
+}
+
+.menu {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 6px 12px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #bbb;
+  color: white;
+}
+
+/* ==== Aside ==== */
+aside {
+	float: right;
+	width: 320px;
+	border: 4px inset purple;
+	border-radius: 14px;
+	margin: 15px;
+	padding: 15px;
+	background:url(images/fade.jpg) repeat-x top left;
+	box-shadow: 8px 8px 12px rgba(0,0,0,0.4);
+	font-style: italic;
+}
+
+aside2 {
+  float: right;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #999;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+  font-size: 0.9em;
+  color: #333;
+}
+
+aside:hover {
+  display: block;
+}
+
+/* ==== Article + Sections ==== */
+article {
+  margin-right: 280px;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Definition list box */
+dl {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f8f8f8;
+  width: fit-content;
+}
+
+/* ==== Footer ==== */
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+  color: #444;
+  background-color: #f3f3f3;
+}
+
+/* Row container for hyperlinks + images */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Make both sections share space */
+#hyperlinks, #images {
+  flex: 1;
+}
+
+/* Optional: add some padding/border */
+#hyperlinks {
+  text-align: center;
+}
+
+#images {
+  text-align: center;
+}
+
+/* Definition list: 2-column layout (term | description) */
+#lists dl {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  column-gap: 16px;
+  row-gap: 8px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 10px;
+  width: fit-content;
+}
+
+#lists dt,
+#lists dd {
+  margin: 0;
+}
+
+#lists dt {
+  grid-column: 1;
+  font-weight: bold;
+  text-align: center;
+}
+
+#lists dd {
+  grid-column: 2;
+  word-break: break-word;
+}
+
+/* If a previous stylesheet added a colon with ::after, kill it */
+#lists dt::after { content: none !important; }
+
+/* Center the section headings only */
+#lists h2, 
+#lists h3,
+#tables h2 {
+  text-align: center;
+}
+
+/* Keep list and table content left-aligned */
+#lists ul, 
+#lists ol, 
+#lists dl, 
+#tables table {
+  margin: 0 auto;
+  text-align: left;
+}

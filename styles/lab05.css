@@ -1,0 +1,72 @@
+/* ===== lab05.css ===== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #000;
+}
+
+h1 {
+  color: purple;
+}
+
+h2 {
+  color: teal;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #444;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+ul, ol, dl {
+  margin-left: 30px;
+}
+
+dl dt {
+  font-weight: bold;
+  color: green;
+}
+
+dl dd {
+  margin-left: 20px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Table styles */
+table {
+  margin: 10px 0;
+  width: 60%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
